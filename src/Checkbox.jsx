@@ -12,7 +12,7 @@ export default function Checkbox({ label, input, required}) {
             <input
               key={key}
               type="checkbox"
-              name={i}
+              name={label}
               value={i}
               className="text-lg"
             />

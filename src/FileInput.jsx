@@ -25,6 +25,7 @@ export default function FileInput({ name, label, placeholder, required }) {
             error? "border-red-500 text-red-600" : "border-gray-100"
           } border-2 border-gray-100 px-2 py-1 rounded focus:outline-none focus:shadow-outline invalid:`}
         onChange={handleChange}
+        required={isRequired}
       />
       {error && (
         <span className="text-red-600 text-sm text-left">

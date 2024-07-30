@@ -49,6 +49,7 @@ export default function Input({ name, label, placeholder, required, state, useSt
         } border-2 border-gray-100 px-2 py-1 rounded focus:outline-none focus:shadow-outline invalid:`}
         onBlur={handleBlur}
         onChange={handleChange}
+        required={isRequired}
       />
       {error && (
         <span className="text-red-600 text-sm text-left">

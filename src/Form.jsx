@@ -9,7 +9,7 @@ export default function Form() {
   const handleReset = (e) => {
     e.target.reset();
   };
-  
+
   const handleSubmit = (e) => {
     const formData = new FormData(e.target);
     const data = Object.fromEntries(formData);

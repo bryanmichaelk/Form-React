@@ -10,7 +10,7 @@ export default function Radio({ label, input, required }) {
 				{input.map((i, key) => {
 					return (
 						<div className='flex items-center gap-2' key={key}>
-							<input type='radio' name={label} value={i} className='text-lg' />
+							<input type='radio' name={label} value={i} className='text-lg' required={required} />
 							<label htmlFor={i}>{i}</label>
 						</div>
 					)
